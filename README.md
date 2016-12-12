@@ -19,6 +19,18 @@ collectionViewLayout.estimatedItemHeight = 20.0
 collectionViewLayout.itemHeight = FeedCollectionViewLayoutAutomaticHeight
 ```
 
+### Properties
+
+```swift
+collectionViewLayout.itemHeight // CGFloat
+collectionViewLayout.estimatedItemHeight // CGFloat
+
+collectionViewLayout.sectionInsets // UIEdgeInsets
+collectionViewLayout.numberOfColumns // Int
+collectionViewLayout.lineSpacing // CGFloat
+collectionViewLayout.interItemSpacing // CGFloat
+```
+
 ### Delegate (optional)
 
 Subclass `FeedCollectionViewLayoutDelegate` and implement the protocol:
