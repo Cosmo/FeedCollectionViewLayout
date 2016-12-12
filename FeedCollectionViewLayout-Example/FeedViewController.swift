@@ -40,12 +40,12 @@ public class FeedDelegate: FeedCollectionViewLayoutDelegate {
 
 class FeedViewController: UIViewController {
     lazy var collectionView: UICollectionView = {
-        let collectionViewLayout1 = FeedCollectionViewLayout()
-        // collectionViewLayout1.estimatedItemHeight = 20.0
-        // collectionViewLayout1.itemHeight = FeedCollectionViewLayoutAutomaticHeight
-        collectionViewLayout1.delegate = FeedDelegate()
+        let collectionViewLayout = FeedCollectionViewLayout()
+        // collectionViewLayout.estimatedItemHeight = 20.0
+        // collectionViewLayout.itemHeight = FeedCollectionViewLayoutAutomaticHeight
+        collectionViewLayout.delegate = FeedDelegate()
         
-        return UICollectionView(frame: CGRect.zero, collectionViewLayout: collectionViewLayout1)
+        return UICollectionView(frame: CGRect.zero, collectionViewLayout: collectionViewLayout)
     }()
     
     var dataSource: UICollectionViewDataSource = {
